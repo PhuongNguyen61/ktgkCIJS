@@ -1,0 +1,52 @@
+.container {
+    width: 1340px;
+    padding: 15px 83px;
+    background-color: #192026;
+    margin: auto;
+}
+
+.topFeat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topFeat h1 {
+    font-size: 36px;
+    color: white;
+}
+
+.topFeat p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #868686;
+}
+
+.topFeat input {
+    width: 374px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 37px;
+    background-color: #374151;
+    padding: 12px 20px;
+}
+
+.bottomFeat {
+    margin-top: 29px;
+}
+
+.bottomFeat h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+
+.bottomFeat .movies {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
