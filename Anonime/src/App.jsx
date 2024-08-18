@@ -6,16 +6,11 @@ import Banner from '/public/banner.png'
 import './App.css'
 
 function App() {
-  const initial = {
+  const [movie, setMovie] = useState({
     image: Banner,
     movieName: 'Weather With You',
-    description: ' Corrupt politicians, frenzied nationalists, and other warmongering forces constantly jeopardize the thin veneer of peace between neighboring countries Ostania and Westalis. '
-  }
-  const [movie, setMovie] = useState(initial)
-  let viewExplore
-  if (movie) {
-    viewExplore = <Explore movie={movie}/>
-  }
+    description: ' Corrupt politicians, frenzied nationalists, and other warmongering forces constantly jeopardize the thin veneer of peace between neighboring countries Ostania and Westalis.'
+  })
 
   return (
     <div className='container'>
@@ -25,7 +20,7 @@ function App() {
         <p>List anime</p>
         <input type="text" placeholder='Search anime or movie'/>
       </div>
-      {viewExplore}
+      <Explore movie={movie}/>
       <div className='bottomFeat'>
         <h1>New Release</h1>
         <div className='movies'>
